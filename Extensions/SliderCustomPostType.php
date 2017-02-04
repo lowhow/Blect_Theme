@@ -1,7 +1,7 @@
-<?php namespace Framework\Extensions;
-use Framework\Core\CustomPostType as CustomPostType;
-use Framework\Core\Observer as Observer;
-use Framework\WordPress\Loader as Loader;
+<?php namespace Extensions;
+use \Framework\Core\CustomPostType as CustomPostType;
+use \Framework\Core\Observer as Observer;
+use \Framework\WordPress\Loader as Loader;
 
 class SliderCustomPostType extends CustomPostType  implements Observer
 {
@@ -18,8 +18,8 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 		$this->slug				= $slug;
 	}
 
-	public function handle() 
-	{	
+	public function handle()
+	{
 		$this->loader
 		->add_action( 'init', $this, 'custom_post_type_init' )
 		->add_action( 'init', $this, 'register_acf_field_group' )
@@ -42,7 +42,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/register_post_type
 	 */
-	public function custom_post_type_init() 
+	public function custom_post_type_init()
 	{
 		$labels 			= array(
 			'name'               => _x( ucFirst( $this->plural_name ), 'post type general name', FW_TEXTDOMAIN ),
@@ -91,7 +91,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 	 * @param [type] $columns [description]
 	 * @link(_blank, http://www.smashingmagazine.com/2013/12/05/modifying-admin-post-lists-in-wordpress/)
 	 */
-	public function add_new_column_headers( $columns ) 
+	public function add_new_column_headers( $columns )
 	{
 	    $new_columns = array(
 	    	'slider_shortcode' => 'Shortcode',
@@ -99,7 +99,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 
 	    $first_array = array_splice( $columns, 0, 2 );
 	    $columns = array_merge( $first_array, $new_columns, $columns );
-	    
+
 	    return $columns;
 	}
 
@@ -109,9 +109,9 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 	 * @param [type] $post_id     [description]
 	 * @link(_blank, http://www.smashingmagazine.com/2013/12/05/modifying-admin-post-lists-in-wordpress/)
 	 */
-	public function add_new_column_columns( $column_name, $post_id ) 
+	public function add_new_column_columns( $column_name, $post_id )
 	{
-	    if ($column_name == 'slider_shortcode') 
+	    if ($column_name == 'slider_shortcode')
 	    {
 	    	$post_arr = get_post( $post_id, ARRAY_A );
 	    	echo '[fw_slider slug="' . $post_arr['post_name'] . '"]';
@@ -122,7 +122,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 	 * [action_javascript description]
 	 * @return [type] [description]
 	 */
-	public function action_javascript() 
+	public function action_javascript()
 	{
 		?>
 		<script>
@@ -159,7 +159,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 
 		global $post;
 		$slide_arr = array();
-		if ( $slider_posts->have_posts() ) : 
+		if ( $slider_posts->have_posts() ) :
 			while ( $slider_posts->have_posts() ) : $slider_posts->the_post();
 				if( have_rows('slide_item') ):
 				    while ( have_rows('slide_item') ) : the_row();
@@ -190,7 +190,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 		endif;
 		wp_reset_postdata();
 
-		ob_start(); 
+		ob_start();
 		?>
 		<div id="flexslider-<?php echo $atts['slug']; ?>" class="flexslider">
 			<ul class="slides">

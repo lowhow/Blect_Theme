@@ -1,9 +1,9 @@
-<?php namespace Framework\Extensions\Projectname;
-use Framework\Core\Observer as Observer;
-use Framework\WordPress\Loader as Loader;
+<?php namespace Extensions\Projectname;
+use \Framework\Core\Observer as Observer;
+use \Framework\WordPress\Loader as Loader;
 
 class Quicktags implements Observer
-{	
+{
 	private $loader;
 
 	public function __construct( Loader $loader )
@@ -11,7 +11,7 @@ class Quicktags implements Observer
 		$this->loader = $loader;
 	}
 
-	public function handle() 
+	public function handle()
 	{
 		$this->loader
 		->add_action( 'admin_print_footer_scripts', $this, 'custom_panel_quicktags' );
@@ -32,11 +32,11 @@ class Quicktags implements Observer
 	    	 * id
 	    	 * (string) (required) The html id for the button.
 	    	 * Default: None
-	    	 * 
+	    	 *
 	    	 * display
 	    	 * (string) (required) The html value for the button.
 	    	 * Default: None
-	    	 * 
+	    	 *
 	    	 * arg1
 	    	 * (string) (required) Either a starting tag to be inserted like "<span>" or a callback that is executed when the button is clicked.
 	    	 * Default: None
@@ -44,7 +44,7 @@ class Quicktags implements Observer
 	    	 * arg2
 	    	 * (string) (optional) Ending tag like "</span>". Leave empty if tag doesn't need to be closed (i.e. "<hr />").
 	    	 * Default: None
-	    	 * 
+	    	 *
 	    	 * access_key
 	    	 * (string) (optional) Shortcut access key for the button.
 	    	 * Default: None

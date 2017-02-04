@@ -1,6 +1,6 @@
-<?php namespace Framework\Extensions;
-use Framework\Core\Observer as Observer;
-use Framework\WordPress\Loader as Loader;
+<?php namespace Extensions;
+use \Framework\Core\Observer as Observer;
+use \Framework\WordPress\Loader as Loader;
 
 class Page implements Observer
 {
@@ -11,7 +11,7 @@ class Page implements Observer
 		$this->loader = $loader;
 	}
 
-	public function handle() 
+	public function handle()
 	{
 		$this->loader
 		->add_action( 'init', $this, 'add_post_type_support');
@@ -22,8 +22,8 @@ class Page implements Observer
 	/**
 	 * [add_post_type_support description]
 	 */
-	public function add_post_type_support() 
-	{	
+	public function add_post_type_support()
+	{
 	    add_post_type_support( 'page', 'excerpt' );
 	}
 

@@ -1,4 +1,4 @@
-<?php 
+<?php
 if( !defined( 'ABSPATH' ) ) {
 	die;
 }
@@ -38,9 +38,9 @@ define( 'FW_THEME_FRAMEWORK_INCLUDE_DIR', trailingslashit( FW_THEME_FRAMEWORK_DI
 /**
  * Bootstrapping Composer Autoloading for namespaces
  */
-require trailingslashit( FW_VENDOR_DIR ) . 'autoload.php';
+require __DIR__ . '/vendor/autoload.php';
 
-/** 
+/**
  Bootstrapping Framework
  */
 $blect = new Framework\ThemeSetup();
