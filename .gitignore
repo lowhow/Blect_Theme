@@ -61,3 +61,6 @@ assets/img/*
 !assets/img/index.php
 data/
 !data/index.php
+
+config.codekit
+config.codekit3
