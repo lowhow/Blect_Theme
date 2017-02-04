@@ -1,0 +1,49 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+// Delimiter
+// -------------------------
+.delimiter{
+    display: inline-block;
+    width: 3px;
+    content: '';
+}
+
+// Paddings
+// -------------------------
+.padding-top-0      { padding-top: 0 !important; }
+.padding-top-half   { padding-top: ($line-height-computed / 2) !important; }
+.padding-top-1x     { padding-top: $line-height-computed !important; }
+.padding-top-2x     { padding-top: ($line-height-computed * 2) !important; }
+.padding-bottom-0   { padding-bottom: 0 !important; }
+.padding-bottom-half{ padding-bottom: ($line-height-computed / 2) !important; }
+.padding-bottom-1x  { padding-bottom: $line-height-computed !important; }
+.padding-bottom-2x  { padding-bottom: ($line-height-computed * 2) !important; }
+.padding-left-0     { padding-left: 0 !important; }
+.padding-left-half  { padding-left: ($line-height-computed / 2) !important; }
+.padding-left-1x    { padding-left: $line-height-computed !important; }
+.padding-left-2x    { padding-left: ($line-height-computed * 2) !important; }
+.padding-right-0    { padding-right: 0 !important; }
+.padding-right-1x   { padding-right: $line-height-computed !important; }
+.padding-right-2x   { padding-right: ($line-height-computed * 2) !important; }
+.padding-box-1x     { padding: $line-height-computed !important; }
+
+// Margins
+// -------------------------
+.margin-top-0       { margin-top: 0 !important; }
+.margin-top-half    { margin-top: ($line-height-computed / 2) !important; }
+.margin-top-1x      { margin-top: $line-height-computed !important; }
+.margin-top-2x      { margin-top: ($line-height-computed * 2) !important; }
+.margin-bottom-0    { margin-bottom: 0 !important; }
+.margin-bottom-half { margin-bottom: ($line-height-computed / 2) !important; }
+.margin-bottom-1x   { margin-bottom: $line-height-computed !important; }
+.margin-bottom-2x   { margin-bottom: ($line-height-computed * 2) !important; }
+.margin-left-0      { margin-left: 0 !important; }
+.margin-left-half   { margin-left: ($line-height-computed / 2) !important; }
+.margin-left-1x     { margin-left: $line-height-computed !important; }
+.margin-left-2x     { margin-left: ($line-height-computed * 2) !important; }
+.margin-right-0     { margin-right: 0 !important; }
+.margin-right-half  { margin-right: ($line-height-computed / 2) !important; }
+.margin-right-1x    { margin-right: $line-height-computed!important; }
+.margin-right-2x    { margin-right: ($line-height-computed * 2) !important; }

@@ -1,0 +1,21 @@
+//
+// List groups
+// --------------------------------------------------
+
+// Contextual variants
+@include list-group-item-variant(teal, lighten($skin-teal, 40%), darken($skin-teal, 10%));
+@include list-group-item-variant(teal-darker, lighten($skin-teal-darker, 40%), darken($skin-teal-darker, 10%));
+@include list-group-item-variant(green, lighten($skin-green, 40%), darken($skin-green, 10%));
+@include list-group-item-variant(green-darker, lighten($skin-green-darker, 40%), darken($skin-green-darker, 10%));
+@include list-group-item-variant(blue, lighten($skin-blue, 40%), darken($skin-blue, 10%));
+@include list-group-item-variant(blue-darker, lighten($skin-blue-darker, 40%), darken($skin-blue-darker, 10%));
+@include list-group-item-variant(purple, lighten($skin-purple, 40%), darken($skin-purple, 10%));
+@include list-group-item-variant(purple-darker, lighten($skin-purple-darker, 40%), darken($skin-purple-darker, 10%));
+@include list-group-item-variant(denim, lighten($skin-denim, 40%), darken($skin-denim, 10%));
+@include list-group-item-variant(denim-darker, lighten($skin-denim-darker, 40%), darken($skin-denim-darker, 10%));
+@include list-group-item-variant(yellow, lighten($skin-yellow, 40%), darken($skin-yellow, 10%));
+@include list-group-item-variant(yellow-darker, lighten($skin-yellow-darker, 40%), darken($skin-yellow-darker, 10%));
+@include list-group-item-variant(orange, lighten($skin-orange, 40%), darken($skin-orange, 10%));
+@include list-group-item-variant(orange-darker, lighten($skin-orange-darker, 40%), darken($skin-orange-darker, 10%));
+@include list-group-item-variant(red, lighten($skin-red, 40%), darken($skin-red, 10%));
+@include list-group-item-variant(red-darker, lighten($skin-red-darker, 40%), darken($skin-red-darker, 10%));

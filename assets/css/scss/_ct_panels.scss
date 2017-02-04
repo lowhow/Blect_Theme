@@ -1,0 +1,53 @@
+//
+// Panels
+// --------------------------------------------------
+
+// Contextual variations
+.panel-teal {
+  @include panel-variant(lighten($skin-teal, 40%), $skin-teal, lighten($skin-teal, 40%), lighten($skin-teal, 40%));
+}
+.panel-teal-darker {
+  @include panel-variant(lighten($skin-teal-darker, 40%), $skin-teal-darker, lighten($skin-teal-darker, 40%), lighten($skin-teal-darker, 40%));
+}
+.panel-green {
+  @include panel-variant(lighten($skin-green, 40%), $skin-green, lighten($skin-green, 40%), lighten($skin-green, 40%));
+}
+.panel-green-darker {
+  @include panel-variant(lighten($skin-green-darker, 40%), $skin-green-darker, lighten($skin-green-darker, 40%), lighten($skin-green-darker, 40%));
+}
+.panel-blue {
+  @include panel-variant(lighten($skin-blue, 40%), $skin-blue, lighten($skin-blue, 40%), lighten($skin-blue, 40%));
+}
+.panel-blue-darker {
+  @include panel-variant(lighten($skin-blue-darker, 40%), $skin-blue-darker, lighten($skin-blue-darker, 40%), lighten($skin-blue-darker, 40%));
+}
+.panel-purple {
+  @include panel-variant(lighten($skin-purple, 40%), $skin-purple, lighten($skin-purple, 40%), lighten($skin-purple, 40%));
+}
+.panel-purple-darker {
+  @include panel-variant(lighten($skin-purple-darker, 40%), $skin-purple-darker, lighten($skin-purple-darker, 40%), lighten($skin-purple-darker, 40%));
+}
+.panel-denim {
+  @include panel-variant(lighten($skin-denim, 40%), $skin-denim, lighten($skin-denim, 40%), lighten($skin-denim, 40%));
+}
+.panel-denim-darker {
+  @include panel-variant(lighten($skin-denim-darker, 40%), $skin-denim-darker, lighten($skin-denim-darker, 40%), lighten($skin-denim-darker, 40%));
+}
+.panel-yellow {
+  @include panel-variant(lighten($skin-yellow, 40%), $skin-yellow, lighten($skin-yellow, 40%), lighten($skin-yellow, 40%));
+}
+.panel-yellow-darker {
+  @include panel-variant(lighten($skin-yellow-darker, 40%), $skin-yellow-darker, lighten($skin-yellow-darker, 40%), lighten($skin-yellow-darker, 40%));
+}
+.panel-orange {
+  @include panel-variant(lighten($skin-orange, 40%), $skin-orange, lighten($skin-orange, 40%), lighten($skin-orange, 40%));
+}
+.panel-orange-darker {
+  @include panel-variant(lighten($skin-orange-darker, 40%), $skin-orange-darker, lighten($skin-orange-darker, 40%), lighten($skin-orange-darker, 40%));
+}
+.panel-red {
+  @include panel-variant(lighten($skin-red, 40%), $skin-red, lighten($skin-red, 40%), lighten($skin-red, 40%));
+}
+.panel-red-darker {
+  @include panel-variant(lighten($skin-red-darker, 40%), $skin-red-darker, lighten($skin-red-darker, 40%), lighten($skin-red-darker, 40%));
+}

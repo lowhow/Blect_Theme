@@ -1,0 +1,70 @@
+//
+// Labels
+// --------------------------------------------------
+
+// Colors
+// Contextual variations (linked labels get darker on :hover)
+$label-teal-bg: $skin-teal;
+.label-teal {
+  @include label-variant($label-teal-bg);
+}
+$label-teal-darker-bg: $skin-teal-darker;
+.label-teal-darker {
+  @include label-variant($label-teal-darker-bg);
+}
+$label-green-bg: $skin-green;
+.label-green {
+  @include label-variant($label-green-bg);
+}
+$label-green-darker-bg: $skin-green-darker;
+.label-green-darker {
+  @include label-variant($label-green-darker-bg);
+}
+$label-blue-bg: $skin-blue;
+.label-blue {
+  @include label-variant($label-blue-bg);
+}
+$label-blue-darker-bg: $skin-blue-darker;
+.label-blue-darker {
+  @include label-variant($label-blue-darker-bg);
+}
+$label-purple-bg: $skin-purple;
+.label-purple {
+  @include label-variant($label-purple-bg);
+}
+$label-purple-darker-bg: $skin-purple-darker;
+.label-purple-darker {
+  @include label-variant($label-purple-darker-bg);
+}
+$label-denim-bg: $skin-denim;
+.label-denim {
+  @include label-variant($label-denim-bg);
+}
+$label-denim-darker-bg: $skin-denim-darker;
+.label-denim-darker {
+  @include label-variant($label-denim-darker-bg);
+}
+$label-yellow-bg: $skin-yellow;
+.label-yellow {
+  @include label-variant($label-yellow-bg);
+}
+$label-yellow-darker-bg: $skin-yellow-darker;
+.label-yellow-darker {
+  @include label-variant($label-yellow-darker-bg);
+}
+$label-orange-bg: $skin-orange;
+.label-orange {
+  @include label-variant($label-orange-bg);
+}
+$label-orange-darker-bg: $skin-orange-darker;
+.label-orange-darker {
+  @include label-variant($label-orange-darker-bg);
+}
+$label-red-bg: $skin-red;
+.label-red {
+  @include label-variant($label-red-bg);
+}
+$label-red-darker-bg: $skin-red-darker;
+.label-red-darker {
+  @include label-variant($label-red-darker-bg);
+}

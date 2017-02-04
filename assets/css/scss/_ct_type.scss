@@ -1,0 +1,47 @@
+//
+// Typography
+// --------------------------------------------------
+
+// Contextual colors
+@include text-emphasis-variant('.text-teal', $skin-teal);
+@include text-emphasis-variant('.text-teal-darker', $skin-teal-darker);
+@include text-emphasis-variant('.text-green', $skin-green);
+@include text-emphasis-variant('.text-green-darker', $skin-green-darker);
+@include text-emphasis-variant('.text-blue', $skin-blue);
+@include text-emphasis-variant('.text-blue-darker', $skin-blue-darker);
+@include text-emphasis-variant('.text-purple', $skin-purple);
+@include text-emphasis-variant('.text-purple-darker', $skin-purple-darker);
+@include text-emphasis-variant('.text-denim', $skin-denim);
+@include text-emphasis-variant('.text-denim-darker', $skin-denim-darker);
+@include text-emphasis-variant('.text-yellow', $skin-yellow);
+@include text-emphasis-variant('.text-yellow-darker', $skin-yellow-darker);
+@include text-emphasis-variant('.text-orange', $skin-orange);
+@include text-emphasis-variant('.text-orange-darker', $skin-orange-darker);
+@include text-emphasis-variant('.text-red', $skin-red);
+@include text-emphasis-variant('.text-red-darker', $skin-red-darker);
+@include text-emphasis-variant('.text-gray-lighter', $skin-gray-lighter);
+@include text-emphasis-variant('.text-gray-light', $skin-gray-light);
+@include text-emphasis-variant('.text-gray-dark', $skin-gray-dark);
+@include text-emphasis-variant('.text-gray-darker', $skin-gray-darker);
+
+// Contextual backgrounds
+@include bg-variant('.bg-teal', $skin-teal);
+@include bg-variant('.bg-teal-darker', $skin-teal-darker);
+@include bg-variant('.bg-green', $skin-green);
+@include bg-variant('.bg-green-darker', $skin-green-darker);
+@include bg-variant('.bg-blue', $skin-blue);
+@include bg-variant('.bg-blue-darker', $skin-blue-darker);
+@include bg-variant('.bg-purple', $skin-purple);
+@include bg-variant('.bg-purple-darker', $skin-purple-darker);
+@include bg-variant('.bg-denim', $skin-denim);
+@include bg-variant('.bg-denim-darker', $skin-denim-darker);
+@include bg-variant('.bg-yellow', $skin-yellow);
+@include bg-variant('.bg-yellow-darker', $skin-yellow-darker);
+@include bg-variant('.bg-orange', $skin-orange);
+@include bg-variant('.bg-orange-darker', $skin-orange-darker);
+@include bg-variant('.bg-red', $skin-red);
+@include bg-variant('.bg-red-darker', $skin-red-darker);
+@include bg-variant('.bg-gray-lighter', $skin-gray-lighter);
+@include bg-variant('.bg-gray-light', $skin-gray-light);
+@include bg-variant('.bg-gray-dark', $skin-gray-dark);
+@include bg-variant('.bg-gray-darker', $skin-gray-darker);

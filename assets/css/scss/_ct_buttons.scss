@@ -1,0 +1,103 @@
+//
+// Buttons
+// --------------------------------------------------
+
+
+// Alternate buttons
+// --------------------------------------------------
+$btn-teal-color:              #fff !default;
+$btn-teal-bg:                 $skin-teal !default;
+$btn-teal-border:             $skin-teal !default;
+.btn-teal {
+  @include button-variant($btn-teal-color, $btn-teal-bg, $btn-teal-border);
+}
+$btn-teal-darker-color:              #fff !default;
+$btn-teal-darker-bg:                 $skin-teal-darker !default;
+$btn-teal-darker-border:             $skin-teal-darker !default;
+.btn-teal-darker {
+  @include button-variant($btn-teal-darker-color, $btn-teal-darker-bg, $btn-teal-darker-border);
+}
+$btn-green-color:              #fff !default;
+$btn-green-bg:                 $skin-green !default;
+$btn-green-border:             $skin-green !default;
+.btn-green {
+  @include button-variant($btn-green-color, $btn-green-bg, $btn-green-border);
+}
+$btn-green-darker-color:              #fff !default;
+$btn-green-darker-bg:                 $skin-green-darker !default;
+$btn-green-darker-border:             $skin-green-darker !default;
+.btn-green-darker {
+  @include button-variant($btn-green-darker-color, $btn-green-darker-bg, $btn-green-darker-border);
+}
+$btn-blue-color:              #fff !default;
+$btn-blue-bg:                 $skin-blue !default;
+$btn-blue-border:             $skin-blue !default;
+.btn-blue {
+  @include button-variant($btn-blue-color, $btn-blue-bg, $btn-blue-border);
+}
+$btn-blue-darker-color:              #fff !default;
+$btn-blue-darker-bg:                 $skin-blue-darker !default;
+$btn-blue-darker-border:             $skin-blue-darker !default;
+.btn-blue-darker {
+  @include button-variant($btn-blue-darker-color, $btn-blue-darker-bg, $btn-blue-darker-border);
+}
+$btn-purple-color:              #fff !default;
+$btn-purple-bg:                 $skin-purple !default;
+$btn-purple-border:             $skin-purple !default;
+.btn-purple {
+  @include button-variant($btn-purple-color, $btn-purple-bg, $btn-purple-border);
+}
+$btn-purple-darker-color:              #fff !default;
+$btn-purple-darker-bg:                 $skin-purple-darker !default;
+$btn-purple-darker-border:             $skin-purple-darker !default;
+.btn-purple-darker {
+  @include button-variant($btn-purple-darker-color, $btn-purple-darker-bg, $btn-purple-darker-border);
+}
+$btn-denim-color:              #fff !default;
+$btn-denim-bg:                 $skin-denim !default;
+$btn-denim-border:             $skin-denim !default;
+.btn-denim {
+  @include button-variant($btn-denim-color, $btn-denim-bg, $btn-denim-border);
+}
+$btn-denim-darker-color:              #fff !default;
+$btn-denim-darker-bg:                 $skin-denim-darker !default;
+$btn-denim-darker-border:             $skin-denim-darker !default;
+.btn-denim-darker {
+  @include button-variant($btn-denim-darker-color, $btn-denim-darker-bg, $btn-denim-darker-border);
+}
+$btn-yellow-color:              #fff !default;
+$btn-yellow-bg:                 $skin-yellow !default;
+$btn-yellow-border:             $skin-yellow !default;
+.btn-yellow {
+  @include button-variant($btn-yellow-color, $btn-yellow-bg, $btn-yellow-border);
+}
+$btn-yellow-darker-color:              #fff !default;
+$btn-yellow-darker-bg:                 $skin-yellow-darker !default;
+$btn-yellow-darker-border:             $skin-yellow-darker !default;
+.btn-yellow-darker {
+  @include button-variant($btn-yellow-darker-color, $btn-yellow-darker-bg, $btn-yellow-darker-border);
+}
+$btn-orange-color:              #fff !default;
+$btn-orange-bg:                 $skin-orange !default;
+$btn-orange-border:             $skin-orange !default;
+.btn-orange {
+  @include button-variant($btn-orange-color, $btn-orange-bg, $btn-orange-border);
+}
+$btn-orange-darker-color:              #fff !default;
+$btn-orange-darker-bg:                 $skin-orange-darker !default;
+$btn-orange-darker-border:             $skin-orange-darker !default;
+.btn-orange-darker {
+  @include button-variant($btn-orange-darker-color, $btn-orange-darker-bg, $btn-orange-darker-border);
+}
+$btn-red-color:              #fff !default;
+$btn-red-bg:                 $skin-red !default;
+$btn-red-border:             $skin-red !default;
+.btn-red {
+  @include button-variant($btn-red-color, $btn-red-bg, $btn-red-border);
+}
+$btn-red-darker-color:              #fff !default;
+$btn-red-darker-bg:                 $skin-red-darker !default;
+$btn-red-darker-border:             $skin-red-darker !default;
+.btn-red-darker {
+  @include button-variant($btn-red-darker-color, $btn-red-darker-bg, $btn-red-darker-border);
+}
