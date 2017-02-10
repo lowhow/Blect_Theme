@@ -43,7 +43,8 @@ require __DIR__ . '/vendor/autoload.php';
 /**
  Bootstrapping Framework
  */
-$blect = new Framework\ThemeSetup();
+require __DIR__ . '/ThemeSetup.php';
+$blect = new ThemeSetup();
 $blect->run();
 
 

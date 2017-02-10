@@ -1,5 +1,5 @@
-<?php namespace Framework;
-
+<?php use Framework as F;
+use Extensions as Ext;
 class ThemeSetup
 {
 	private $helper;
@@ -14,16 +14,16 @@ class ThemeSetup
 
 	public function __construct()
 	{
-		$this->loader = new WordPress\Loader;
-		$this->helper = new WordPress\Helper;
-		$this->stylesAndScripts = new WordPress\StylesAndScripts;
-		$this->themeSupport = new WordPress\ThemeSupport;
-		$this->navMenu = new WordPress\NavMenu;
-		$this->widget = new WordPress\Widget;
-		$this->shortcode = new WordPress\Shortcode;
-		$this->extensionLoader = new Core\ExtensionLoader;
-		$this->textDomain = new WordPress\TextDomain;
-		$this->oEmbed = new WordPress\OEmbed;
+		$this->loader = new F\WordPress\Loader;
+		$this->helper = new F\WordPress\Helper;
+		$this->stylesAndScripts = new F\WordPress\StylesAndScripts;
+		$this->themeSupport = new F\WordPress\ThemeSupport;
+		$this->navMenu = new F\WordPress\NavMenu;
+		$this->widget = new F\WordPress\Widget;
+		$this->shortcode = new F\WordPress\Shortcode;
+		$this->extensionLoader = new F\Core\ExtensionLoader;
+		$this->textDomain = new F\WordPress\TextDomain;
+		$this->oEmbed = new F\WordPress\OEmbed;
 
 		global $helper;
 		$helper = $this->helper;
@@ -64,14 +64,14 @@ class ThemeSetup
 
 		$this->extensionLoader
 		//->attach( new Extensions\PrettyPhoto )
-		->attach( new \Extensions\Pagination( $this->loader ) )
-		->attach( new \Extensions\Page( $this->loader ) )
-		->attach( new \Extensions\SliderCustomPostType( $this->loader, 'slider', 'sliders') )
+		->attach( new Ext\Pagination( $this->loader ) )
+		->attach( new Ext\Page( $this->loader ) )
+		->attach( new Ext\SliderCustomPostType( $this->loader, 'slider', 'sliders') )
 		// ->attach( new Extensions\EventCustomPostType( $this->loader, 'event', 'events', 'events') )
 		// ->attach( new Extensions\Woocommerce( $this->loader ) )
 		// ->attach( new Extensions\Search( $this->loader ) )
 		// ->attach( new Extensions\JQueryAjaxify( $this->loader ) )
-		->attach( new \Extensions\Projectname\Quicktags( $this->loader ) )
+		->attach( new Ext\Projectname\Quicktags( $this->loader ) )
 		// ->attach( new Extensions\Projectname\Shortcode( $this->loader ) )
 		// ->attach( new Extensions\Projectname\Router( $this->loader ) )
 		// ->attach( new Extensions\Projectname\Ajax( $this->loader ) )
