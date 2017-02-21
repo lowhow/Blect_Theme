@@ -1,0 +1,18 @@
+{
+  "name": "blect-theme",
+  "version": "0.1",
+  "main": "",
+  "dependencies": {
+    "modernizr": "~3.3.1",
+    "jquery": "~3.1.1",
+    "bootstrap": "~3.3.7",
+    "bootstrap-sass": "~3.3.7",
+    "fontawesome": "~4.7.0",
+    "jQuery.mmenu": "~5.7.8",
+    "animate-css": "~3.5.2",
+    "owl-carousel2": "~2.2.0",
+    "scrollreveal": "~3.3.4",
+    "moment": "~2.17.1"
+  },
+  "private": true
+}
