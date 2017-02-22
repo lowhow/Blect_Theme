@@ -66,7 +66,7 @@ class ThemeSetup
 		//->attach( new Extensions\PrettyPhoto )
 		->attach( new Ext\Pagination( $this->loader ) )
 		->attach( new Ext\Page( $this->loader ) )
-		->attach( new Ext\SliderCustomPostType( $this->loader, 'slider', 'sliders') )
+		// ->attach( new Ext\SliderCustomPostType( $this->loader, 'slider', 'sliders') )
 		// ->attach( new Extensions\EventCustomPostType( $this->loader, 'event', 'events', 'events') )
 		// ->attach( new Extensions\Woocommerce( $this->loader ) )
 		// ->attach( new Extensions\Search( $this->loader ) )
