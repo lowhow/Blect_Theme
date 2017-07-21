@@ -58,6 +58,7 @@ class ThemeSetup
 		//->remove_action('wp_head', 'feed_links_extra', 3)
 		//->remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 )
 		->remove_action( 'wp_head', 'rsd_link' )
+		->add_action( 'wp_head', $this->helper, 'add_favicon' )
 		->add_action( 'init', $this->helper, 'disable_wp_emojicons' );
 
 		$this->shortcode->add();
