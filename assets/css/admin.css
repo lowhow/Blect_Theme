@@ -1,3 +1,22 @@
+body.lang-zh-hans #adminmenuback,
+body.lang-zh-hans #adminmenuwrap,
+body.lang-zh-hans #adminmenu,
+body.lang-zh-hans #wpadminbar{
+  background-color: #350003;
+}
+body.lang-zh-hans #adminmenu .wp-submenu{
+  background-color: #470006;
+}
+body.lang-ms #adminmenuback,
+body.lang-ms #adminmenuwrap,
+body.lang-ms #adminmenu,
+body.lang-ms #wpadminbar{
+  background-color: #112600;
+}
+body.lang-ms #adminmenu .wp-submenu{
+  background-color: #183500;
+}
+
 .bootstrap-wrapper {
   /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
   /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
