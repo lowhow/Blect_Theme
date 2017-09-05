@@ -1,6 +1,6 @@
-<?php namespace Framework\Extensions;
-use Framework\Core\Observer as Observer;
-use Framework\WordPress\Loader as Loader;
+<?php namespace Extensions;
+use \Framework\Core\Observer as Observer;
+use \Framework\WordPress\Loader as Loader;
 
 class GravityForm implements Observer
 {
@@ -15,7 +15,8 @@ class GravityForm implements Observer
 	{
 		$this->loader
 		->add_filter( 'gform_field_content', $this, 'bootstrap_styles_for_gravityforms', 10, 2 )
-			->add_filter( 'gform_field_content', $this, 'bootstrap_styles_for_gravityforms_fields', 10, 5 );
+		->add_filter( 'gform_field_content', $this, 'bootstrap_styles_for_gravityforms_fields', 10, 5 );
+		add_filter( 'gform_init_scripts_footer', '__return_true' );
 
 		return $this;
 	}
