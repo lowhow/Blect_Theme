@@ -126,7 +126,7 @@ class SliderCustomPostType extends CustomPostType  implements Observer
 	{
 		?>
 		<script>
-		jQuery( window ).load( function( $ ) {
+		jQuery( window ).on('load', function( $ ) {
 			var $flexslider = jQuery('.flexslider');
 			if( $flexslider.length > 0 ){
 				jQuery('.flexslider').flexslider({
