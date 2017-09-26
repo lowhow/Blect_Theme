@@ -19,3 +19,15 @@
 @include list-group-item-variant(orange-darker, lighten($skin-orange-darker, 40%), darken($skin-orange-darker, 10%));
 @include list-group-item-variant(red, lighten($skin-red, 40%), darken($skin-red, 10%));
 @include list-group-item-variant(red-darker, lighten($skin-red-darker, 40%), darken($skin-red-darker, 10%));
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {
+}
