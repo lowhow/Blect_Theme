@@ -2,7 +2,8 @@
 /**
  * The template for general category listing page
  */
-get_header(); ?>
+get_header();
+global $helper; ?>
 <?php get_template_part( 'partials/page-header/category' ); ?>
 <div class="page-body">
 	<div class="page-body-container container">
@@ -21,7 +22,7 @@ get_header(); ?>
 							get_template_part( 'partials/content/listing-grid-sm2col' );
 						endwhile; 
 						echo '<div class="clearfix"></div>';
-						$helper->t_pagination();
+						echo $helper->bootstrap_pagination();
 					}
 					else
 					{
