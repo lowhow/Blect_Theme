@@ -6,7 +6,8 @@
  * @subpackage Vun_Hougkh
  * @since The Starry Night 1.0 with Vun Hougkh 1.0
  */
-get_header(); ?>
+get_header();
+global $helper; ?>
 <?php get_template_part( 'partials/page-header/archive' ); ?>
 <div class="page-body">
 	<div class="page-body-container container">
@@ -20,7 +21,7 @@ get_header(); ?>
 						while ( have_posts() ) : the_post(); 
 							get_template_part( 'partials/content/listing' );
 						endwhile; 
-						$helper->t_pagination();
+						echo $helper->bootstrap_pagination();
 					}
 					else
 					{
