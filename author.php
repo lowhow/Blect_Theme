@@ -2,7 +2,8 @@
 /**
  * The template for general author listing page
  */
-get_header(); ?>
+get_header();
+global $helper; ?>
 <?php get_template_part( 'partials/page-header/author' ); ?>
 <div class="page-body">
 	<div class="page-body-container container">
@@ -16,7 +17,7 @@ get_header(); ?>
 						while ( have_posts() ) : the_post(); 
 							get_template_part( 'partials/content/listing' );
 						endwhile; 
-						$helper->t_pagination();
+						echo $helper->bootstrap_pagination();
 					}
 					else
 					{
