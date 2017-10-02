@@ -339,5 +339,53 @@ class Helper
 			return array();
 		}
 	}
+	
+	/*
+	 * custom pagination with bootstrap .pagination class
+	 * source: http://www.ordinarycoder.com/paginate_links-class-ul-li-bootstrap/
+	 */
+	public function bootstrap_pagination( $the_query = NULL ) {
+		global $wp_query;
+		if ( is_null( $the_query ) ){
+			$the_query = $wp_query;
+		}
+
+		$big = 999999999; // need an unlikely integer
+		$pages = paginate_links( array(
+				'base'              => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+				'format'            => '?paged=%#%',
+				'current'           => max( 1, get_query_var('paged') ),
+				'total' 			=> $the_query->max_num_pages,
+				'show_all'          => false,
+				'end_size'          => 1,
+				'mid_size'          => 2,
+				'prev_next'         => true,
+				'prev_text'         => __('<i class="fa fa-angle-left fa-lg"></i>'),
+				'next_text'         => __('<i class="fa fa-angle-right fa-lg"></i>'),
+				'type'              => 'array',
+				'add_args'          => false,
+				'add_fragment'      => '',
+				'before_page_number' => '',
+			)
+		);
+
+		if( is_array( $pages ) ) {
+			$paged = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
+			$pagination = '<ul class="pagination">';
+			foreach ( $pages as $page ) {
+				if ( strpos($page, 'current') !== false )
+				{
+					$pagination .= '<li class="active">'.$page.'</li>';
+				}
+				else
+				{
+					$pagination .= '<li>'.$page.'</li>';
+				}
+			}
+			$pagination .= '</ul>';
+
+			return '<div class="fw-paginate text-center">'.$pagination.'</div>';
+		}
+	}
 
 }
