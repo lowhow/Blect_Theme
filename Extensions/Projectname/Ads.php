@@ -1,6 +1,6 @@
-<?php namespace Framework\Extensions\Apple101;
-use Framework\Core\Observer as Observer;
-use Framework\WordPress\Loader as Loader;
+<?php namespace Extensions\Projectname;
+use \Framework\Core\Observer as Observer;
+use \Framework\WordPress\Loader as Loader;
 
 class Ads implements Observer
 {	
