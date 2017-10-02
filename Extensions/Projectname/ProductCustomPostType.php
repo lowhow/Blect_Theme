@@ -1,4 +1,4 @@
-<?php namespace Extensions\Safeflex;
+<?php namespace Extensions\Projectname;
 use \Framework\Core\CustomPostType as CustomPostType;
 use \Framework\Core\Observer as Observer;
 use \Framework\WordPress\Loader as Loader;
