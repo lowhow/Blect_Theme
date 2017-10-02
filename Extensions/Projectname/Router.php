@@ -1,6 +1,6 @@
-<?php namespace Framework\Extensions\Projectname;
-use Framework\Core\Observer as Observer;
-use Framework\WordPress\Loader as Loader;
+<?php namespace Extensions\Projectname;
+use \Framework\Core\Observer as Observer;
+use \Framework\WordPress\Loader as Loader;
 
 class Router implements Observer
 {
