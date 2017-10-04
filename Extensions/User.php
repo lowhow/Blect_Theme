@@ -1,6 +1,6 @@
-<?php namespace Framework\Extensions;
-use Framework\Core\Observer as Observer;
-use Framework\WordPress\Loader as Loader;
+<?php namespace Extensions;
+use \Framework\Core\Observer as Observer;
+use \Framework\WordPress\Loader as Loader;
 
 class User implements Observer
 {
