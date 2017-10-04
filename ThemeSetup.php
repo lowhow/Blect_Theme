@@ -53,6 +53,7 @@ class ThemeSetup
 		->add_filter( 'embed_oembed_html', $this->oEmbed, 'add_oembed_responsive_wrapper', 10, 4 )
 		->remove_action( 'wp_head', 'wp_generator' )
 		->remove_action( 'wp_head', 'wlwmanifest_link' )
+		->add_filter('show_admin_bar', '__return_false')
 		//->remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0)
 		//->remove_action('wp_head', 'feed_links', 2)
 		//->remove_action('wp_head', 'feed_links_extra', 3)
