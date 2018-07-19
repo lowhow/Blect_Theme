@@ -54,7 +54,7 @@ intermediate
 cache
 
 vendor/
-mode_modules/
+node_modules/
 #assets/
 !assets/img/
 !assets/index.php
