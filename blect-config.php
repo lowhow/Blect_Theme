@@ -13,6 +13,8 @@ define( 'FW_UPLOAD_DIR', trailingslashit( dirname( dirname( dirname( __DIR__ ) )
 define( 'FW_UPLOAD_URI', trailingslashit( get_bloginfo( 'url' ) ) . 'data' );
 define( 'FW_VENDOR_DIR', trailingslashit( dirname( __FILE__ ) . '/vendor' ) );
 define( 'FW_VENDOR_URI', trailingslashit( get_template_directory_uri() ) . 'vendor' );
+define( 'FW_NPM_DIR', trailingslashit( dirname( __FILE__ ) . '/node_modules' ) );
+define( 'FW_NPM_URI', trailingslashit( get_template_directory_uri() ) . 'node_modules' );
 define( 'FW_THEME_DIR', trailingslashit( get_template_directory() ) );
 define( 'FW_THEME_URI', trailingslashit( get_template_directory_uri() ) );
 define( 'FW_THEME_ADMIN_DIR', trailingslashit( FW_THEME_DIR . 'admin' ) );

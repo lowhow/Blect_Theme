@@ -1,19 +1,44 @@
-@mixin transform($transform) {
-  -webkit-transform: $transform;
-     -moz-transform: $transform;
-      -ms-transform: $transform;
-       -o-transform: $transform;
-          transform: $transform;
+
+/*
+     ####           #    #
+    #               ##  ##
+     ####           # ## #
+         #          #    #
+    #    #          #    #
+     ####           #    #
+ */
+@include media-breakpoint-up(sm) {
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) {
+/*
+    #    #          #####
+    ##  ##          #    #
+    # ## #          #    #
+    #    #          #    #
+    #    #          #    #
+    #    #          #####
+ */
+@include media-breakpoint-up(md) {
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {
+/*
+    #                ####
+    #               #    #
+    #               #
+    #               #  ###
+    #               #    #
+    ######           ####
+ */
+@include media-breakpoint-up(lg) {
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {
+/*
+    #    #          #
+     #  #           #
+      ##            #
+      ##            #
+     #  #           #
+    #    #          ######
+ */
+@include media-breakpoint-up(xl) {
 }

@@ -14,12 +14,6 @@ class StylesAndScripts
         // stylesheets //
         ////////////////////
         /**
-         * Link Skin Stylesheet (compiled and minified from LESS)
-         */
-        //wp_enqueue_style('fontawesome', trailingslashit(FW_VENDOR_URI) . 'fontawesome/css/font-awesome.min.css', array(), null);
-        wp_enqueue_style('fontawesome-cdn', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null);
-
-        /**
          * MMenu Stylesheet
          */
         // wp_enqueue_style('mmenu', trailingslashit(FW_VENDOR_URI) . 'jQuery.mmenu/dist/css/jquery.mmenu.all.css', array(), null);
@@ -61,12 +55,12 @@ class StylesAndScripts
          * Replace WordPress bundled version with our own version
          */
         wp_deregister_script('jquery');
-        wp_enqueue_script('jquery', trailingslashit(FW_VENDOR_URI) . 'jquery/dist/jquery.min.js', array(), null, TRUE);
+        wp_enqueue_script('jquery', trailingslashit(FW_NPM_URI) . 'jquery/dist/jquery.min.js', array(), null, TRUE);
 
         /**
          * Bootstrap Script
          */
-	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_VENDOR_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, TRUE );
+	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_NPM_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, TRUE );
 
         /**
          * Kwicks Script

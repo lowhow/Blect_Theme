@@ -39,7 +39,7 @@ img.alignnone{
 .entry-caption,
 .gallery-caption,
 .wp-caption .wp-caption-text{
-	color:darken( $gray-lighter, 20% ); margin-top: $line-height-computed / 4; font-size:92%;font-style:italic;font-weight:300; line-height:$line-height-computed / 2.4;
+	color:darken( $skin-gray-lighter, 20% ); margin-top: $grid-gutter-width / 4; font-size:92%;font-style:italic;font-weight:300; line-height:$grid-gutter-width / 2.4;
 }
 .rsswidget img,img.wp-smiley{
 	border:0;border-radius:0;box-shadow:none;margin-bottom:0;margin-top:0;padding:0
@@ -47,4 +47,68 @@ img.alignnone{
 .wp-caption.alignleft+ol,
 .wp-caption.alignleft+ul{
 	list-style-position:inside
+}
+
+
+
+/*
+                                   .         .
+   d888888o.                      ,8.       ,8.
+ .`8888:' `88.                   ,888.     ,888.
+ 8.`8888.   Y8                  .`8888.   .`8888.
+ `8.`8888.                     ,8.`8888. ,8.`8888.
+  `8.`8888.                   ,8'8.`8888,8^8.`8888.
+   `8.`8888.                 ,8' `8.`8888' `8.`8888.
+    `8.`8888.               ,8'   `8.`88'   `8.`8888.
+8b   `8.`8888.             ,8'     `8.`'     `8.`8888.
+`8b.  ;8.`8888            ,8'       `8        `8.`8888.
+ `Y8888P ,88P'           ,8'         `         `8.`8888.
+ */
+@include media-breakpoint-up(sm) {
+}
+
+/*
+          .         .
+         ,8.       ,8.                    8 888888888o.
+        ,888.     ,888.                   8 8888    `^888.
+       .`8888.   .`8888.                  8 8888        `88.
+      ,8.`8888. ,8.`8888.                 8 8888         `88
+     ,8'8.`8888,8^8.`8888.                8 8888          88
+    ,8' `8.`8888' `8.`8888.               8 8888          88
+   ,8'   `8.`88'   `8.`8888.              8 8888         ,88
+  ,8'     `8.`'     `8.`8888.             8 8888        ,88'
+ ,8'       `8        `8.`8888.            8 8888    ,o88P'
+,8'         `         `8.`8888.           8 888888888P'
+ */
+@include media-breakpoint-up(md) {
+}
+
+/*
+8 8888                       ,o888888o.
+8 8888                      8888     `88.
+8 8888                   ,8 8888       `8.
+8 8888                   88 8888
+8 8888                   88 8888
+8 8888                   88 8888
+8 8888                   88 8888   8888888
+8 8888                   `8 8888       .8'
+8 8888                      8888     ,88'
+8 888888888888               `8888888P'
+ */
+@include media-breakpoint-up(lg) {
+}
+
+/*
+`8.`8888.      ,8'           8 8888
+ `8.`8888.    ,8'            8 8888
+  `8.`8888.  ,8'             8 8888
+   `8.`8888.,8'              8 8888
+    `8.`88888'               8 8888
+    .88.`8888.               8 8888
+   .8'`8.`8888.              8 8888
+  .8'  `8.`8888.             8 8888
+ .8'    `8.`8888.            8 8888
+.8'      `8.`8888.           8 888888888888
+ */
+@include media-breakpoint-up(xl) {
 }

@@ -1,49 +1,61 @@
-//
-// Utility classes
-// --------------------------------------------------
-
-// Delimiter
-// -------------------------
-.delimiter{
-    display: inline-block;
-    width: 3px;
-    content: '';
+/*
+                                   .         .
+   d888888o.                      ,8.       ,8.
+ .`8888:' `88.                   ,888.     ,888.
+ 8.`8888.   Y8                  .`8888.   .`8888.
+ `8.`8888.                     ,8.`8888. ,8.`8888.
+  `8.`8888.                   ,8'8.`8888,8^8.`8888.
+   `8.`8888.                 ,8' `8.`8888' `8.`8888.
+    `8.`8888.               ,8'   `8.`88'   `8.`8888.
+8b   `8.`8888.             ,8'     `8.`'     `8.`8888.
+`8b.  ;8.`8888            ,8'       `8        `8.`8888.
+ `Y8888P ,88P'           ,8'         `         `8.`8888.
+ */
+@include media-breakpoint-up(sm) {
 }
 
-// Paddings
-// -------------------------
-.padding-top-0      { padding-top: 0 !important; }
-.padding-top-half   { padding-top: ($line-height-computed / 2) !important; }
-.padding-top-1x     { padding-top: $line-height-computed !important; }
-.padding-top-2x     { padding-top: ($line-height-computed * 2) !important; }
-.padding-bottom-0   { padding-bottom: 0 !important; }
-.padding-bottom-half{ padding-bottom: ($line-height-computed / 2) !important; }
-.padding-bottom-1x  { padding-bottom: $line-height-computed !important; }
-.padding-bottom-2x  { padding-bottom: ($line-height-computed * 2) !important; }
-.padding-left-0     { padding-left: 0 !important; }
-.padding-left-half  { padding-left: ($line-height-computed / 2) !important; }
-.padding-left-1x    { padding-left: $line-height-computed !important; }
-.padding-left-2x    { padding-left: ($line-height-computed * 2) !important; }
-.padding-right-0    { padding-right: 0 !important; }
-.padding-right-1x   { padding-right: $line-height-computed !important; }
-.padding-right-2x   { padding-right: ($line-height-computed * 2) !important; }
-.padding-box-1x     { padding: $line-height-computed !important; }
+/*
+          .         .
+         ,8.       ,8.                    8 888888888o.
+        ,888.     ,888.                   8 8888    `^888.
+       .`8888.   .`8888.                  8 8888        `88.
+      ,8.`8888. ,8.`8888.                 8 8888         `88
+     ,8'8.`8888,8^8.`8888.                8 8888          88
+    ,8' `8.`8888' `8.`8888.               8 8888          88
+   ,8'   `8.`88'   `8.`8888.              8 8888         ,88
+  ,8'     `8.`'     `8.`8888.             8 8888        ,88'
+ ,8'       `8        `8.`8888.            8 8888    ,o88P'
+,8'         `         `8.`8888.           8 888888888P'
+ */
+@include media-breakpoint-up(md) {
+}
 
-// Margins
-// -------------------------
-.margin-top-0       { margin-top: 0 !important; }
-.margin-top-half    { margin-top: ($line-height-computed / 2) !important; }
-.margin-top-1x      { margin-top: $line-height-computed !important; }
-.margin-top-2x      { margin-top: ($line-height-computed * 2) !important; }
-.margin-bottom-0    { margin-bottom: 0 !important; }
-.margin-bottom-half { margin-bottom: ($line-height-computed / 2) !important; }
-.margin-bottom-1x   { margin-bottom: $line-height-computed !important; }
-.margin-bottom-2x   { margin-bottom: ($line-height-computed * 2) !important; }
-.margin-left-0      { margin-left: 0 !important; }
-.margin-left-half   { margin-left: ($line-height-computed / 2) !important; }
-.margin-left-1x     { margin-left: $line-height-computed !important; }
-.margin-left-2x     { margin-left: ($line-height-computed * 2) !important; }
-.margin-right-0     { margin-right: 0 !important; }
-.margin-right-half  { margin-right: ($line-height-computed / 2) !important; }
-.margin-right-1x    { margin-right: $line-height-computed!important; }
-.margin-right-2x    { margin-right: ($line-height-computed * 2) !important; }
+/*
+8 8888                       ,o888888o.
+8 8888                      8888     `88.
+8 8888                   ,8 8888       `8.
+8 8888                   88 8888
+8 8888                   88 8888
+8 8888                   88 8888
+8 8888                   88 8888   8888888
+8 8888                   `8 8888       .8'
+8 8888                      8888     ,88'
+8 888888888888               `8888888P'
+ */
+@include media-breakpoint-up(lg) {
+}
+
+/*
+`8.`8888.      ,8'           8 8888
+ `8.`8888.    ,8'            8 8888
+  `8.`8888.  ,8'             8 8888
+   `8.`8888.,8'              8 8888
+    `8.`88888'               8 8888
+    .88.`8888.               8 8888
+   .8'`8.`8888.              8 8888
+  .8'  `8.`8888.             8 8888
+ .8'    `8.`8888.            8 8888
+.8'      `8.`8888.           8 888888888888
+ */
+@include media-breakpoint-up(xl) {
+}

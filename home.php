@@ -13,6 +13,14 @@ global $helper;
 		<div class="page-body-container container">
 			<div class="page-body-inner row">
 				<div id="primary" class="content-area col-md-8">
+					<div class="well">
+						<i class="fal fa-anchor"></i>
+						<button class="hamburger hamburger--slider is-active" type="button">
+							<span class="hamburger-box">
+						    	<span class="hamburger-inner"></span>
+						  	</span>
+						</button>
+					</div>
 					<?php if ( ! is_paged() ) : ?>
 					<?php endif; // END: is_paged() ?>
 				</div>
