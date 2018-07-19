@@ -64,3 +64,5 @@ data/
 
 config.codekit
 config.codekit3
+
+package-lock.json
