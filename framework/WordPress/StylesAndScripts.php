@@ -58,19 +58,14 @@ class StylesAndScripts
         wp_enqueue_script('jquery', trailingslashit(FW_NPM_URI) . 'jquery/dist/jquery.min.js', array(), null, TRUE);
 
         /**
+         * Popper.js
+         */
+        wp_enqueue_script( 'popper-js', trailingslashit( FW_NPM_URI ) . 'popper.js/dist/js/popper.min.js', array( 'jquery' ), null, TRUE );
+
+        /**
          * Bootstrap Script
          */
-	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_NPM_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'jquery' ), null, TRUE );
-
-        /**
-         * Kwicks Script
-         */
-//		wp_enqueue_script( 'kwicks-js', trailingslashit( FW_VENDOR_URI ) . 'kwicks/jquery.kwicks.min.js', array( 'jquery' ), null, TRUE );
-
-        /**
-         * Owl Carousel Script
-         */
-//		wp_enqueue_script( 'owl-js', trailingslashit( FW_VENDOR_URI ) . 'OwlCarousel/owl-carousel/owl.carousel.min.js', array( 'jquery' ), null, TRUE );
+	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_NPM_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'popper-js','jquery' ), null, TRUE );
 
         /**
          * MMenu Script
@@ -80,18 +75,22 @@ class StylesAndScripts
         /**
          * jQuery Easing
          */
-        wp_enqueue_script('jquery-easing', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js', array('jquery'), null, TRUE);
+        // wp_enqueue_script('jquery-easing', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js', array('jquery'), null, TRUE);
 
         /**
-         * Register Vendor scripts
+         * GSAP
          */
-        //wp_enqueue_script('vendor-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'vendor.js', array(), null, TRUE);
+        wp_enqueue_script('gsap', trailingslashit( FW_NPM_URI ) . 'gsap/src/minified/TweenMax.min.js', array('jquery'), null, TRUE);
+
+        /**
+         * GSAP
+         */
+        wp_enqueue_script('gsap', trailingslashit( FW_NPM_URI ) . 'gsap/src/minified/TweenMax.min.js', array('jquery'), null, TRUE);
 
         /**
          * Adding Theme's script .
          */
-        wp_enqueue_script('application-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'application.js', array('vendor-js'), null, TRUE);
-
+        wp_enqueue_script('application-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'application.js', array('gsap','bs-js'), null, TRUE);
 
         return $this;
 
@@ -120,23 +119,6 @@ class StylesAndScripts
         wp_enqueue_media();
 
         wp_enqueue_script('admin-media-in-metabox-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'admin-media-in-metabox.js', array('media-upload'), null);
-        /**
-         * Boostrap3 Script
-         *
-         * Becareful when enable this script. Might kill plugin page.
-         */
-        //wp_enqueue_script('bs3-js', trailingslashit(FW_VENDOR_URI) . '/bootstrap/dist/js/bootstrap.min.js', array(), null);
-
-        /**
-         * Main Script
-         */
-        //wp_enqueue_script('admin-js', trailingslashit(FW_THEME_ASSETS_JS_URI) . 'admin.js', array(), null);
-
-        /**
-         * Moment.js Script
-         */
-        //wp_enqueue_script( 'bs-js', trailingslashit( FW_VENDOR_URI ) . 'moment/min/moment.min.js', array(), null );
-
     }
 
 }
