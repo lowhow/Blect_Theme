@@ -1,30 +1,45 @@
-$(function() {
+jQuery(function() {
 	//////////////////////////////////
 	// Bootstrap 3rd level dropdown //
 	//////////////////////////////////
-	$(".dropdown-menu > li > a").on("click",function(e){
-		var current		=	$(this).next();
-		var $parent 		=	$(this).parent()
-		var $grandparent =	$(this).parent().parent();
+	jQuery(".dropdown-menu > li > a").on("click",function(e){
+		//var current		=	jQuery(this).next();
+		var $parent 		=	jQuery(this).parent()
+		var $grandparent =	jQuery(this).parent().parent();
 
-		$parent.toggleClass('open');
+		jQuery.parent.toggleClass('open');
 
 		$grandparent.find('.open').not($parent).toggleClass('open')
 		e.stopPropagation();
 	});
-	$("li.dropdown > a").not('li.dropdown li.dropdown > a').on("click",function(){
-		var root=$(this).find('.dropdown');
+	jQuery("li.dropdown > a").not('li.dropdown li.dropdown > a').on("click",function(){
+		var root=jQuery(this).find('.dropdown');
 		root.find('.sub-menu:visible').hide();
 	});
 	///////////
 	// MMenu //
 	///////////
-	// jQuery( '#blect-mmenu' ).mmenu({
-	// 	offCanvas: {
- //           	position  : "right",
- //           	zposition : "front"
- //        }
-	// });
+	jQuery( '#blect-mmenu' ).mmenu({
+        wrappers: ["bootstrap4"],
+		offCanvas: {
+           	position  : "right",
+           	zposition : "front"
+        }
+	});
+
+	var API = jQuery("#blect-mmenu").data( "mmenu" );
+
+	jQuery(".hamburger").click(function() {
+		API.open();
+	});
+
+
+	jQuery('.navbar-blect-collapse').on('show.bs.collapse', function() {
+		jQuery('#hamburger').addClass('is-active');
+	});
+	jQuery('.navbar-blect-collapse').on('hide.bs.collapse', function() {
+		jQuery('#hamburger').removeClass('is-active');
+	});
 
 
 	/////////////////////
@@ -81,7 +96,7 @@ $(function() {
 	// 		}
 	// 	}
 	// }
-	// $(window).resize( function(){
+	// jQuery(window).resize( function(){
 	// 	if( window.innerWidth < 992 ){
 	// 		setRelatedToStatic();
 	// 	}else{

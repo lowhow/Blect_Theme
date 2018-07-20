@@ -16,7 +16,7 @@ class StylesAndScripts
         /**
          * MMenu Stylesheet
          */
-        // wp_enqueue_style('mmenu', trailingslashit(FW_VENDOR_URI) . 'jQuery.mmenu/dist/css/jquery.mmenu.all.css', array(), null);
+        wp_enqueue_style('mmenu', trailingslashit(FW_NPM_URI) . 'jQuery.mmenu/dist/jquery.mmenu.all.css', array(), null);
 
         /**
          * Link Skin Stylesheet (compiled and minified from LESS)
@@ -45,11 +45,6 @@ class StylesAndScripts
         ///////////////
 
         /**
-         * Modernizr.js
-         */
-        //wp_enqueue_script('modenizr-js', trailingslashit(FW_VENDOR_URI) . 'modernizr/modernizr.js', array(), null, TRUE);
-
-        /**
          * jQuery
          *
          * Replace WordPress bundled version with our own version
@@ -60,7 +55,7 @@ class StylesAndScripts
         /**
          * Popper.js
          */
-        wp_enqueue_script( 'popper-js', trailingslashit( FW_NPM_URI ) . 'popper.js/dist/js/popper.min.js', array( 'jquery' ), null, TRUE );
+        wp_enqueue_script( 'popper-js', trailingslashit( FW_NPM_URI ) . 'popper.js/dist/umd/popper.min.js', array( 'jquery' ), null, TRUE );
 
         /**
          * Bootstrap Script
@@ -68,19 +63,10 @@ class StylesAndScripts
 	  	wp_enqueue_script( 'bs-js', trailingslashit( FW_NPM_URI ) . 'bootstrap/dist/js/bootstrap.min.js', array( 'popper-js','jquery' ), null, TRUE );
 
         /**
-         * MMenu Script
+         * MMENU
          */
-		// wp_enqueue_script( 'mmenu-js', trailingslashit( FW_VENDOR_URI ) . 'jQuery.mmenu/dist/js/jquery.mmenu.min.all.js', array( 'jquery' ), null, TRUE );
-
-        /**
-         * jQuery Easing
-         */
-        // wp_enqueue_script('jquery-easing', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js', array('jquery'), null, TRUE);
-
-        /**
-         * GSAP
-         */
-        wp_enqueue_script('gsap', trailingslashit( FW_NPM_URI ) . 'gsap/src/minified/TweenMax.min.js', array('jquery'), null, TRUE);
+        wp_enqueue_script('mmenu', trailingslashit( FW_NPM_URI ) . 'jquery.mmenu/dist/jquery.mmenu.all.js', array('jquery'), null, TRUE);
+        wp_enqueue_script('mmenuwrapper', trailingslashit( FW_NPM_URI ) . 'jquery.mmenu/dist/wrappers/bootstrap/jquery.mmenu.bootstrap4.js', array('mmenu'), null, TRUE);
 
         /**
          * GSAP
